@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Data Diri</title>
+</head>
+<body>
+
+    <h2>Form Data Diri</h2>
+    <hr><hr>
+
+    <table cellspacing="0" cellpadding="5">
+        <form>
+            <!-- form baris 1 -->
+            <tr>
+                <td><label for="namalengkap">Nama Lengkap :</label></td>
+                <td><input type="text" id="namalengkap"></td>
+            </tr>
+
+            <!-- form baris 2 -->
+            <tr>
+                <td><label for="alamat">Alamat :</label></td>
+                <td><textarea></textarea></td>
+            </tr>
+
+            <!-- form baris 3 -->
+            <tr>
+                <td><label for="jeniskelamin">Jenis Kelamin :</label></td>
+                <td>
+                    <input type="radio" id="pria" name="jeniskelamin"><label for="pria">Pria</label>
+                    <input type="radio" id="wanita" name="jeniskelamin"><label for="wanita">Wanita</label>
+                </td>
+            </tr>
+    
+            
+            <!-- form baris 4 -->
+            <tr>
+                <td>
+                    <form action="proses.php" method="post" enctype="multipart/form-data">
+                        <p>Upload Gambar<input type='file' name='foto' accept='image/*'/></p>
+                    </form>
+                </td>
+            </tr>
+
+            <!-- form baris 5 -->
+            <tr>
+                <td><button type="submit">Kirim!</button></td>
+                <td><button type="reset">Reset</button></td>
+            </tr>
+
+        </form>
+    </table>
+
+</body>
+</html>
